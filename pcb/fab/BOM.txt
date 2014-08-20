@@ -1,0 +1,18 @@
+
+1 x AtXmega32E5 : http://www.digikey.com/product-detail/en/ATXMEGA32E5-AU/ATXMEGA32E5-AU-ND/4090195
+1 x FT230XS USB UART : http://www.digikey.com/product-detail/en/FT230XS-R/768-1135-1-ND/3029155
+1 x LM4040 2048 mV VRef : http://www.digikey.com/product-detail/en/LM4040D20IDBZR/296-20899-1-ND/1216871
+1 x MIC5219 3.3V LDO : http://www.digikey.com/product-detail/en/MIC5219-3.3YM5%20TR/576-1281-1-ND/771902
+
+1 x 0603 Fuse : http://www.digikey.com/product-detail/en/MF-FSMF050X-2/MF-FSMF050X-2CT-ND/2039389
+2 x 0603 Ferrite bead : http://www.digikey.com/product-detail/en/CIB10P330NC/1276-6387-1-ND/3973813
+1 x EIA3216 10uF Tantal cap : http://www.digikey.com/product-detail/en/T491A156M010AT/495-2204-1-ND/770370
+
+1 x 0603 Green LED : ...
+1 x 0603 Red LED : ...
+2 x 0603 4.7 uF ceramic cap : ...
+5 x 0603 0.1 uF ceramic cap : ...
+6 x 0603 Resistor : ...
+
+2 x 14:1 0.1 inch Pinheader
+1 x 3:2 0.1 inch Pinheader

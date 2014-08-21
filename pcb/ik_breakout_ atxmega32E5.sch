@@ -153,74 +153,6 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="SparkFun-DigitalIC_ihsan">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find all manner of digital ICs- microcontrollers, memory chips, logic chips, FPGAs, etc.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="SOT23-3">
-<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
-<wire x1="-0.8" y1="0.7" x2="-1.4" y2="0.7" width="0.2032" layer="21"/>
-<wire x1="-1.4" y1="0.7" x2="-1.4" y2="-0.1" width="0.2032" layer="21"/>
-<wire x1="0.8" y1="0.7" x2="1.4" y2="0.7" width="0.2032" layer="21"/>
-<wire x1="1.4" y1="0.7" x2="1.4" y2="-0.1" width="0.2032" layer="21"/>
-<smd name="3" x="0" y="1.1" dx="0.8" dy="0.9" layer="1"/>
-<smd name="2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
-<smd name="1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
-<text x="-0.8255" y="1.778" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.016" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="IHSAN_LM4040">
-<wire x1="-5.08" y1="7.62" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-2.54" x2="12.7" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-2.54" x2="12.7" y2="7.62" width="0.254" layer="94"/>
-<wire x1="12.7" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
-<pin name="ANODE" x="-10.16" y="5.08" length="middle"/>
-<pin name="CATHODE" x="-10.16" y="0" length="middle"/>
-<pin name="NC" x="17.78" y="2.54" length="middle" rot="R180"/>
-<wire x1="5.3594" y1="5.0038" x2="5.3594" y2="3.5814" width="0.254" layer="94"/>
-<wire x1="5.3594" y1="3.5814" x2="4.5466" y2="3.5814" width="0.254" layer="94"/>
-<wire x1="4.5466" y1="3.5814" x2="4.5466" y2="3.556" width="0.254" layer="94"/>
-<wire x1="4.5466" y1="3.556" x2="4.4958" y2="3.556" width="0.254" layer="94"/>
-<wire x1="4.4958" y1="3.556" x2="4.4958" y2="3.8608" width="0.254" layer="94"/>
-<wire x1="5.3594" y1="3.5814" x2="6.1722" y2="3.5814" width="0.254" layer="94"/>
-<wire x1="6.1722" y1="3.5814" x2="6.1722" y2="3.4544" width="0.254" layer="94"/>
-<wire x1="5.3594" y1="3.4544" x2="5.334" y2="3.4544" width="0.254" layer="94"/>
-<wire x1="5.334" y1="3.4544" x2="4.5212" y2="2.6416" width="0.254" layer="94"/>
-<wire x1="4.5212" y1="2.6416" x2="6.0706" y2="2.6416" width="0.254" layer="94"/>
-<wire x1="6.0706" y1="2.6416" x2="6.0706" y2="2.6924" width="0.254" layer="94"/>
-<wire x1="6.0706" y1="2.6924" x2="5.3594" y2="3.4036" width="0.254" layer="94"/>
-<wire x1="5.334" y1="2.4384" x2="5.334" y2="1.143" width="0.254" layer="94"/>
-<text x="2.9718" y="-5.2832" size="1.778" layer="94">LM4040</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="IHSAN_LM4040">
-<gates>
-<gate name="G$1" symbol="IHSAN_LM4040" x="-2.54" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT23-3">
-<connects>
-<connect gate="G$1" pin="ANODE" pad="1"/>
-<connect gate="G$1" pin="CATHODE" pad="2"/>
-<connect gate="G$1" pin="NC" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun-Aesthetics">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 In this library you'll find non-functional items- supply symbols, logos, notations, frame blocks, etc.&lt;br&gt;&lt;br&gt;
@@ -19037,12 +18969,26 @@ This library includes power ICs such as regulators, power symbols (e.g., GND, 5V
 <smd name="3" x="0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
 <smd name="4" x="0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
 <smd name="5" x="-0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
-<text x="-2.54" y="1.905" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-2.54" y="2.286" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
 <rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
 <rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
 <rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
 <rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
 <rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
+</package>
+<package name="SOT23-3">
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-0.8" y1="0.7" x2="-1.4" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="-1.4" y1="0.7" x2="-1.4" y2="-0.1" width="0.2032" layer="21"/>
+<wire x1="0.8" y1="0.7" x2="1.4" y2="0.7" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="0.7" x2="1.4" y2="-0.1" width="0.2032" layer="21"/>
+<smd name="3" x="0" y="1.1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<text x="-2.794" y="2.032" size="1.27" layer="21" font="vector" ratio="15">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -19083,6 +19029,29 @@ This library includes power ICs such as regulators, power symbols (e.g., GND, 5V
 <pin name="EN" x="-8.89" y="-5.08" visible="pin" length="short" direction="in"/>
 <pin name="BYP" x="8.89" y="-5.08" visible="pin" length="short" direction="in" rot="R180"/>
 <text x="-6.35" y="-10.16" size="1.524" layer="96" font="vector" ratio="15">&gt;VALUE</text>
+</symbol>
+<symbol name="LM4040">
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<pin name="ANODE" x="-10.16" y="2.54" length="short"/>
+<pin name="CATHODE" x="-10.16" y="-2.54" length="short"/>
+<pin name="NC" x="10.16" y="0" length="short" rot="R180"/>
+<text x="-7.62" y="5.715" size="1.524" layer="95" font="vector" ratio="15">&gt;NAME</text>
+<text x="-0.635" y="-6.985" size="1.524" layer="95" font="vector" ratio="15">LM4040</text>
+<wire x1="-4.445" y1="-1.27" x2="-5.715" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-5.715" y1="1.27" x2="-6.985" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-6.985" y1="-1.27" x2="-4.445" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-6.985" y1="1.27" x2="-7.239" y2="1.778" width="0.254" layer="94"/>
+<wire x1="-4.445" y1="1.27" x2="-4.191" y2="0.762" width="0.254" layer="94"/>
+<wire x1="-6.985" y1="1.27" x2="-5.715" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-5.715" y1="1.27" x2="-4.445" y2="1.27" width="0.254" layer="94"/>
+<wire x1="-5.715" y1="2.54" x2="-7.62" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-5.715" y1="2.54" x2="-5.715" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-5.715" y1="-2.54" x2="-7.62" y2="-2.54" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -19154,6 +19123,23 @@ Standard voltage regulator in SOT23-5 layout. Micrel part MIC5219x.x where x.x d
 <technologies>
 <technology name="3.3"/>
 <technology name="5.0"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LM4040" prefix="U">
+<gates>
+<gate name="G$1" symbol="LM4040" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-3">
+<connects>
+<connect gate="G$1" pin="ANODE" pad="1"/>
+<connect gate="G$1" pin="CATHODE" pad="2"/>
+<connect gate="G$1" pin="NC" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -19992,7 +19978,7 @@ This library includes digital and analog Integrated Circuits such as MCUs, shift
 <part name="R7" library="Ai_Passives" deviceset="RES" device="0603"/>
 <part name="C6" library="Ai_Passives" deviceset="CAP" device="0603" value="0.1uF"/>
 <part name="SUPPLY11" library="Ai_Power" deviceset="GND" device=""/>
-<part name="U2" library="SparkFun-DigitalIC_ihsan" deviceset="IHSAN_LM4040" device=""/>
+<part name="U2" library="Ai_Power" deviceset="LM4040" device=""/>
 <part name="FUSE" library="Ai_Passives" deviceset="FB" device=""/>
 <part name="USB1" library="Ai_Connectors" deviceset="USB" device="MICROB-TH" value="USBMICROB-TH"/>
 <part name="RST" library="Ai_Electromechanical" deviceset="SW-SPST" device="SMD03X026"/>
@@ -20058,7 +20044,7 @@ This library includes digital and analog Integrated Circuits such as MCUs, shift
 <instance part="R7" gate="G$1" x="140.97" y="66.04" rot="R90"/>
 <instance part="C6" gate="G$1" x="129.54" y="60.96"/>
 <instance part="SUPPLY11" gate="GND" x="129.54" y="48.26"/>
-<instance part="U2" gate="G$1" x="153.67" y="53.34"/>
+<instance part="U2" gate="G$1" x="154.94" y="55.88"/>
 <instance part="FUSE" gate="G$1" x="22.86" y="55.88" rot="MR180"/>
 <instance part="USB1" gate="G$1" x="16.51" y="113.03" rot="MR0"/>
 <instance part="RST" gate="G$1" x="52.07" y="78.74"/>
@@ -20190,7 +20176,7 @@ This library includes digital and analog Integrated Circuits such as MCUs, shift
 <wire x1="129.54" y1="50.8" x2="129.54" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="53.34" x2="129.54" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="U2" gate="G$1" pin="CATHODE"/>
-<wire x1="143.51" y1="53.34" x2="129.54" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="53.34" x2="129.54" y2="53.34" width="0.1524" layer="91"/>
 <junction x="129.54" y="53.34"/>
 </segment>
 <segment>
@@ -20390,7 +20376,7 @@ This library includes digital and analog Integrated Circuits such as MCUs, shift
 <segment>
 <wire x1="138.43" y1="58.42" x2="140.97" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="140.97" y1="58.42" x2="143.51" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="140.97" y1="58.42" x2="144.78" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="140.97" y1="60.96" x2="140.97" y2="58.42" width="0.1524" layer="91"/>
 <junction x="140.97" y="58.42"/>
 <label x="138.43" y="58.42" size="1.27" layer="95" font="vector" ratio="15" rot="R180" xref="yes"/>

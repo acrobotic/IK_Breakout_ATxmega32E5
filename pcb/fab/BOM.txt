@@ -16,3 +16,15 @@
 
 2 x 14:1 0.1 inch Pinheader
 1 x 3:2 0.1 inch Pinheader
+
+Inline resistor for USB line are 22 ohms
+Choose suitable values for LEDs. I'm leaving that to you :)
+Color of the LEDs sound OK.
+Pullup resistor for the LM4040 can be 1K and the Reset pullup can be 10K.
+
+For the inductor and the fuse,
+
+I guess I've sent the part numbers that I used in my prototypes: 
+
+1 x 0603 Fuse : http://www.digikey.com/product-detail/en/MF-FSMF050X-2/MF-FSMF050X-2CT-ND/2039389
+2 x 0603 Ferrite bead : http://www.digikey.com/product-detail/en/CIB10P330NC/1276-6387-1-ND/3973813

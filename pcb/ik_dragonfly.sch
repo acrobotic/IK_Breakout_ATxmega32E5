@@ -4243,22 +4243,18 @@ Keying posts into board</description>
 This library includes mechanical hardware (e.g., stand-offs), buttons, switches, etc.
 &lt;/p&gt;</description>
 <packages>
-<package name="SW-SPST-SMD03X026">
+<package name="SW-SPST-SMD035X030">
 <description>Shape on the symbol is misleading, 1-2 are internally connected, as well as 3-4.  Digi-Key: CKN9435CT-ND</description>
-<wire x1="-1.5" y1="-0.4" x2="-1.5" y2="0.4" width="0.2032" layer="21"/>
-<wire x1="-1.045" y1="1.3" x2="1.035" y2="1.3" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="0.8" width="0.15" layer="21"/>
-<smd name="1" x="-1.435" y="0.95" dx="0.75" dy="0.85" layer="1" rot="R90"/>
-<smd name="2" x="1.435" y="0.95" dx="0.75" dy="0.85" layer="1" rot="R90"/>
-<smd name="3" x="-1.435" y="-0.95" dx="0.75" dy="0.85" layer="1" rot="R90"/>
-<smd name="4" x="1.435" y="-0.95" dx="0.75" dy="0.85" layer="1" rot="R90"/>
-<wire x1="1.5" y1="-0.4" x2="1.5" y2="0.4" width="0.2032" layer="21"/>
-<wire x1="-1.045" y1="-1.3" x2="1.035" y2="-1.3" width="0.2032" layer="21"/>
-<wire x1="-1.8" y1="1.3" x2="1.8" y2="1.3" width="0.127" layer="51"/>
-<wire x1="1.8" y1="1.3" x2="1.8" y2="-1.3" width="0.127" layer="51"/>
-<wire x1="1.8" y1="-1.3" x2="-1.8" y2="-1.3" width="0.127" layer="51"/>
-<wire x1="-1.8" y1="-1.3" x2="-1.8" y2="1.3" width="0.127" layer="51"/>
-<text x="-1.905" y="1.905" size="1.27" layer="21" ratio="15">&gt;NAME</text>
+<text x="-1.905" y="1.905" size="1.27" layer="21" font="vector" ratio="15">&gt;NAME</text>
+<smd name="1" x="-1.875" y="0.775" dx="0.65" dy="1.25" layer="1" rot="R90"/>
+<smd name="2" x="1.875" y="0.775" dx="0.65" dy="1.25" layer="1" rot="R90"/>
+<smd name="3" x="-1.875" y="-0.775" dx="0.65" dy="1.25" layer="1" rot="R90"/>
+<smd name="4" x="1.875" y="-0.775" dx="0.65" dy="1.25" layer="1" rot="R90"/>
+<wire x1="-1" y1="1.5" x2="0.9" y2="1.5" width="0.2" layer="21"/>
+<wire x1="-1" y1="-1.5" x2="1" y2="-1.5" width="0.2" layer="21"/>
+<wire x1="-1.8" y1="0.2" x2="-1.8" y2="-0.2" width="0.2" layer="21"/>
+<wire x1="1.8" y1="0.2" x2="1.8" y2="-0.2" width="0.2" layer="21"/>
+<circle x="0" y="0" radius="0.875" width="0.2" layer="21"/>
 </package>
 <package name="SW-SPST-SMD06X06">
 <wire x1="-3" y1="-3" x2="3" y2="-3" width="0.254" layer="21"/>
@@ -4359,7 +4355,7 @@ This library includes mechanical hardware (e.g., stand-offs), buttons, switches,
 <gate name="G$1" symbol="SW-SPST-4PIN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="SMD03X026" package="SW-SPST-SMD03X026">
+<device name="SMD03X026" package="SW-SPST-SMD035X030">
 <connects>
 <connect gate="G$1" pin="A@1" pad="1 2"/>
 <connect gate="G$1" pin="B@1" pad="3 4"/>
@@ -20784,8 +20780,9 @@ This library includes digital and analog Integrated Circuits such as MCUs, shift
 </sheet>
 </sheets>
 <errors>
-<approved hash="104,1,68.58,144.78,IC1,3V3OUT,FT_3V3,,,"/>
-<approved hash="104,1,38.1,154.94,IC1,VCCIO,FT_3V3,,,"/>
+<approved hash="102,1,68.58,149.86,VCC,5V,,,,"/>
+<approved hash="104,1,68.58,144.78,IC2,3V3OUT,FT_3V3,,,"/>
+<approved hash="104,1,38.1,154.94,IC2,VCCIO,FT_3V3,,,"/>
 <approved hash="202,1,58.42,45.72,U1,BYP,,,,"/>
 </errors>
 </schematic>

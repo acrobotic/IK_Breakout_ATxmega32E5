@@ -4472,7 +4472,7 @@ design rules under a new name.</description>
 <element name="JP4" library="Ai_Connectors" package="1X08-NOFIRST" value="1X08NOFIRST" x="10.16" y="19.05" smashed="yes"/>
 <element name="J1" library="Ai_Connectors" package="2X03" value="2X03" x="38.1" y="10.16" smashed="yes" rot="R270"/>
 <element name="U1" library="Ai_Power" package="SOT23-5" value="MIC5219-3.3" x="10.6299" y="15.39875" smashed="yes" rot="R270"/>
-<element name="R4" library="Ai_Passives" package="RES-0603" value="330" x="38.1" y="15.367" smashed="yes" rot="R180">
+<element name="R4" library="Ai_Passives" package="RES-0603" value="300" x="38.1" y="15.367" smashed="yes" rot="R180">
 <attribute name="NAME" x="37.6555" y="14.19225" size="0.6096" layer="25" font="vector" ratio="15"/>
 </element>
 <element name="L" library="Ai_LED" package="LED-0603" value="YELLOW" x="35.052" y="15.367" smashed="yes" rot="R90"/>
@@ -4488,7 +4488,7 @@ design rules under a new name.</description>
 <element name="L2" library="Ai_Passives" package="IND-0603" value="33@100MHz" x="31.242" y="13.208" smashed="yes">
 <attribute name="NAME" x="31.97225" y="11.96975" size="0.6096" layer="25" font="vector" ratio="15"/>
 </element>
-<element name="R3" library="Ai_Passives" package="RES-0603" value="1K" x="37.592" y="5.207" smashed="yes">
+<element name="R3" library="Ai_Passives" package="RES-0603" value="10K" x="37.592" y="5.207" smashed="yes">
 <attribute name="NAME" x="39.1795" y="5.04825" size="0.6096" layer="25" font="vector" ratio="15"/>
 </element>
 <element name="C7" library="Ai_Passives" package="CAP-0603" value="0.1uF" x="14.097" y="9.144" smashed="yes" rot="R270">
@@ -4497,12 +4497,12 @@ design rules under a new name.</description>
 <element name="C8" library="Ai_Passives" package="CAP-0603" value="4.7uF" x="18.415" y="15.5575" smashed="yes" rot="R90">
 <attribute name="NAME" x="19.05" y="16.03375" size="0.6096" layer="25" font="vector" ratio="15"/>
 </element>
-<element name="R6" library="Ai_Passives" package="RES-0603" value="1K" x="16.1925" y="16.1925" smashed="yes">
+<element name="R5" library="Ai_Passives" package="RES-0603" value="1K" x="16.1925" y="16.1925" smashed="yes">
 <attribute name="NAME" x="16.8275" y="15.39875" size="0.6096" layer="25" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="ON" library="Ai_LED" package="LED-0603" value="BLUE" x="16.35125" y="14.12875" smashed="yes" rot="R90"/>
 <element name="LOGO1" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="22.352" y="13.208" smashed="yes" rot="MR0"/>
-<element name="R7" library="Ai_Passives" package="RES-0603" value="" x="28.448" y="12.319" smashed="yes" rot="R90">
+<element name="R6" library="Ai_Passives" package="RES-0603" value="1K" x="28.448" y="12.319" smashed="yes" rot="R90">
 <attribute name="NAME" x="28.12415" y="10.02665" size="0.6096" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="VALUE" x="30.353" y="11.684" size="1.27" layer="27" rot="R90"/>
 </element>
@@ -4784,7 +4784,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="PA0">
 <contactref element="IC1" pad="6"/>
-<contactref element="R7" pad="1"/>
+<contactref element="R6" pad="1"/>
 <contactref element="U2" pad="1"/>
 <wire x1="26.67635" y1="11.51875" x2="28.4025" y2="11.51875" width="0.254" layer="1"/>
 <wire x1="28.4025" y1="11.51875" x2="28.448" y2="11.419" width="0.254" layer="1"/>
@@ -5033,7 +5033,7 @@ design rules under a new name.</description>
 <contactref element="JP4" pad="4"/>
 <contactref element="R3" pad="2"/>
 <contactref element="C8" pad="1"/>
-<contactref element="R6" pad="1"/>
+<contactref element="R5" pad="1"/>
 <contactref element="L2" pad="2"/>
 <wire x1="11.90625" y1="16.37885" x2="11.93" y2="16.34875" width="0.254" layer="1"/>
 <wire x1="11.93" y1="16.34875" x2="12.54125" y2="16.34875" width="0.6096" layer="1"/>
@@ -5105,12 +5105,12 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$8">
 <contactref element="ON" pad="A"/>
-<contactref element="R6" pad="2"/>
+<contactref element="R5" pad="2"/>
 <wire x1="17.10125" y1="14.12875" x2="17.10125" y2="16.13375" width="0.254" layer="1"/>
 <wire x1="17.10125" y1="16.13375" x2="17.0925" y2="16.1925" width="0.254" layer="1"/>
 </signal>
 <signal name="N$9">
-<contactref element="R7" pad="2"/>
+<contactref element="R6" pad="2"/>
 <contactref element="L2" pad="1"/>
 <contactref element="C6" pad="1"/>
 <wire x1="28.448" y1="13.219" x2="28.448" y2="14.185" width="0.254" layer="1"/>

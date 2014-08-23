@@ -19958,7 +19958,7 @@ This library includes digital and analog Integrated Circuits such as MCUs, shift
 <part name="J1" library="Ai_Connectors" deviceset="2X03" device=""/>
 <part name="U1" library="Ai_Power" deviceset="MIC5219-*" device="" technology="3.3" value="MIC5219-3.3"/>
 <part name="SUPPLY5" library="Ai_Power" deviceset="GND" device=""/>
-<part name="R4" library="Ai_Passives" deviceset="RES" device="0603" value="330"/>
+<part name="R4" library="Ai_Passives" deviceset="RES" device="0603" value="300"/>
 <part name="L" library="Ai_LED" deviceset="LED" device="0603" value="YELLOW"/>
 <part name="SUPPLY6" library="Ai_Power" deviceset="GND" device=""/>
 <part name="SUPPLY7" library="Ai_Power" deviceset="GND" device=""/>
@@ -19967,15 +19967,15 @@ This library includes digital and analog Integrated Circuits such as MCUs, shift
 <part name="SUPPLY10" library="Ai_Power" deviceset="GND" device=""/>
 <part name="L1" library="Ai_Passives" deviceset="IND" device="0603" value="33@100MHz"/>
 <part name="L2" library="Ai_Passives" deviceset="IND" device="0603" value="33@100MHz"/>
-<part name="R3" library="Ai_Passives" deviceset="RES" device="0603" value="1K"/>
+<part name="R3" library="Ai_Passives" deviceset="RES" device="0603" value="10K"/>
 <part name="C7" library="Ai_Passives" deviceset="CAP" device="0603" value="0.1uF"/>
 <part name="C8" library="Ai_Passives" deviceset="CAP" device="0603" value="4.7uF"/>
 <part name="SUPPLY13" library="Ai_Power" deviceset="GND" device=""/>
-<part name="R6" library="Ai_Passives" deviceset="RES" device="0603" value="1K"/>
+<part name="R5" library="Ai_Passives" deviceset="RES" device="0603" value="1K"/>
 <part name="ON" library="Ai_LED" deviceset="LED" device="0603" value="BLUE"/>
 <part name="SUPPLY14" library="Ai_Power" deviceset="GND" device=""/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="S"/>
-<part name="R7" library="Ai_Passives" deviceset="RES" device="0603"/>
+<part name="R6" library="Ai_Passives" deviceset="RES" device="0603" value="1K"/>
 <part name="C6" library="Ai_Passives" deviceset="CAP" device="0603" value="0.1uF"/>
 <part name="SUPPLY11" library="Ai_Power" deviceset="GND" device=""/>
 <part name="U2" library="Ai_Power" deviceset="LM4040" device=""/>
@@ -20039,11 +20039,11 @@ This library includes digital and analog Integrated Circuits such as MCUs, shift
 <instance part="C7" gate="G$1" x="52.07" y="93.98" rot="R90"/>
 <instance part="C8" gate="G$1" x="237.49" y="111.76"/>
 <instance part="SUPPLY13" gate="GND" x="229.87" y="99.06"/>
-<instance part="R6" gate="G$1" x="76.2" y="53.34" rot="MR270"/>
+<instance part="R5" gate="G$1" x="76.2" y="53.34" rot="MR270"/>
 <instance part="ON" gate="G$1" x="76.2" y="43.18"/>
 <instance part="SUPPLY14" gate="GND" x="76.2" y="33.02"/>
 <instance part="LOGO1" gate="G$1" x="132.08" y="12.7"/>
-<instance part="R7" gate="G$1" x="140.97" y="66.04" rot="R90"/>
+<instance part="R6" gate="G$1" x="140.97" y="66.04" rot="R90"/>
 <instance part="C6" gate="G$1" x="129.54" y="60.96"/>
 <instance part="SUPPLY11" gate="GND" x="129.54" y="48.26"/>
 <instance part="U2" gate="G$1" x="154.94" y="55.88"/>
@@ -20377,7 +20377,7 @@ This library includes digital and analog Integrated Circuits such as MCUs, shift
 </segment>
 <segment>
 <wire x1="138.43" y1="58.42" x2="140.97" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="140.97" y1="58.42" x2="144.78" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="140.97" y1="60.96" x2="140.97" y2="58.42" width="0.1524" layer="91"/>
 <junction x="140.97" y="58.42"/>
@@ -20660,7 +20660,7 @@ This library includes digital and analog Integrated Circuits such as MCUs, shift
 <pinref part="U$5" gate="G$1" pin="3V3"/>
 </segment>
 <segment>
-<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="R5" gate="G$1" pin="1"/>
 <pinref part="U$9" gate="G$1" pin="3V3"/>
 <wire x1="76.2" y1="58.42" x2="76.2" y2="60.96" width="0.1524" layer="91"/>
 </segment>
@@ -20696,13 +20696,13 @@ This library includes digital and analog Integrated Circuits such as MCUs, shift
 <net name="N$8" class="0">
 <segment>
 <pinref part="ON" gate="G$1" pin="A"/>
-<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="76.2" y1="48.26" x2="76.2" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="140.97" y1="71.12" x2="140.97" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="140.97" y1="73.66" x2="143.51" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="L2" gate="G$1" pin="1"/>

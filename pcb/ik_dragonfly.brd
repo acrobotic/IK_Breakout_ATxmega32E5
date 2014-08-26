@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -217,60 +217,15 @@
 <wire x1="8.41375" y1="17.30375" x2="8.5725" y2="17.30375" width="0.1905" layer="21"/>
 <wire x1="11.90625" y1="17.93875" x2="11.90625" y2="17.30375" width="0.1905" layer="21"/>
 <wire x1="11.7475" y1="17.30375" x2="11.90625" y2="17.30375" width="0.1905" layer="21"/>
-<text x="29.4005" y="15.60195" size="1.524" layer="22" ratio="15" rot="MR0">ATxmega32E5</text>
 <dimension x1="41.148" y1="20.32" x2="0" y2="20.32" x3="20.574" y3="22.06625" textsize="1.778" textratio="15" layer="49"/>
-<text x="15.367" y="7.20725" size="1.016" layer="22" font="vector" ratio="15" rot="MR180">Ihsan Kehribar</text>
-<text x="14.224" y="5.55625" size="1.016" layer="22" font="vector" ratio="15" rot="MR180">www.acrobotic.com</text>
+<text x="16.129" y="6.44525" size="0.8128" layer="22" font="vector" ratio="15" rot="MR180">By Ihsan Kehribar</text>
+<text x="16.51" y="5.04825" size="0.8128" layer="22" font="vector" ratio="15" rot="MR180">www.acrobotic.com</text>
 <text x="40.90035" y="16.3322" size="0.6096" layer="21" font="vector" ratio="15" rot="R90">v1.0</text>
 <text x="17.272" y="6.985" size="0.8128" layer="21" font="vector" ratio="15" rot="R90">DRAGONFLY</text>
+<text x="27.8765" y="16.61795" size="1.27" layer="22" ratio="15" rot="MR0">DRAGONFLY</text>
+<text x="26.6065" y="15.34795" size="0.8128" layer="22" ratio="15" rot="MR0">ATxmega32E5</text>
 </plain>
 <libraries>
-<library name="SparkFun-Aesthetics">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find non-functional items- supply symbols, logos, notations, frame blocks, etc.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="OSHW-LOGO-S">
-<polygon width="0.15" layer="21">
-<vertex x="0.3947" y="-0.9528" curve="9.498218"/>
-<vertex x="0.5465" y="-0.8746"/>
-<vertex x="0.9235" y="-1.182"/>
-<vertex x="1.182" y="-0.9235"/>
-<vertex x="0.8746" y="-0.5465" curve="19.000773"/>
-<vertex x="1.0049" y="-0.232"/>
-<vertex x="1.4888" y="-0.1828"/>
-<vertex x="1.4888" y="0.1828"/>
-<vertex x="1.0049" y="0.232" curve="19.000773"/>
-<vertex x="0.8746" y="0.5465"/>
-<vertex x="1.182" y="0.9235"/>
-<vertex x="0.9235" y="1.182"/>
-<vertex x="0.5465" y="0.8746" curve="19.000773"/>
-<vertex x="0.232" y="1.0049"/>
-<vertex x="0.1828" y="1.4888"/>
-<vertex x="-0.1828" y="1.4888"/>
-<vertex x="-0.232" y="1.0049" curve="19.000773"/>
-<vertex x="-0.5465" y="0.8746"/>
-<vertex x="-0.9235" y="1.182"/>
-<vertex x="-1.182" y="0.9235"/>
-<vertex x="-0.8746" y="0.5465" curve="19.000773"/>
-<vertex x="-1.0049" y="0.232"/>
-<vertex x="-1.4888" y="0.1828"/>
-<vertex x="-1.4888" y="-0.1828"/>
-<vertex x="-1.0049" y="-0.232" curve="19.000773"/>
-<vertex x="-0.8746" y="-0.5465"/>
-<vertex x="-1.182" y="-0.9235"/>
-<vertex x="-0.9235" y="-1.182"/>
-<vertex x="-0.5465" y="-0.8746" curve="9.498218"/>
-<vertex x="-0.3947" y="-0.9528"/>
-<vertex x="-0.1794" y="-0.4331" curve="-67.514699"/>
-<vertex x="-0.4688" y="0" curve="-247.473915"/>
-<vertex x="0.1794" y="-0.4331"/>
-</polygon>
-</package>
-</packages>
-</library>
 <library name="Ai_Connectors">
 <description>&lt;h3&gt;Ai Connectors&lt;/h3&gt;
 &lt;p&gt;
@@ -368,7 +323,7 @@ This library includes mechanical hardware (e.g., stand-offs), buttons, switches,
 &lt;/p&gt;</description>
 <packages>
 <package name="SW-SPST-SMD035X030">
-<description>Shape on the symbol is misleading, 1-2 are internally connected, as well as 3-4.  Digi-Key: CKN9435CT-ND</description>
+<description>Shape on the symbol is misleading, 1-2 are internally connected, as well as 3-4.</description>
 <text x="-1.905" y="1.905" size="1.27" layer="21" font="vector" ratio="15">&gt;NAME</text>
 <smd name="1" x="-1.875" y="0.775" dx="0.65" dy="1.25" layer="1" rot="R90"/>
 <smd name="2" x="1.875" y="0.775" dx="0.65" dy="1.25" layer="1" rot="R90"/>
@@ -4004,6 +3959,43 @@ This library includes schematic frames, logos, and other non-electrical/-mechani
 <rectangle x1="0.71945625" y1="2.670175" x2="1.931034375" y2="2.67144375" layer="21"/>
 <text x="0" y="-0.00635" size="0.002540625" layer="21" font="vector">/home/xisco/ai_logo.bmp</text>
 </package>
+<package name="OSHW-LOGO-S">
+<polygon width="0.15" layer="21">
+<vertex x="0.3947" y="-0.9528" curve="9.498218"/>
+<vertex x="0.5465" y="-0.8746"/>
+<vertex x="0.9235" y="-1.182"/>
+<vertex x="1.182" y="-0.9235"/>
+<vertex x="0.8746" y="-0.5465" curve="19.000773"/>
+<vertex x="1.0049" y="-0.232"/>
+<vertex x="1.4888" y="-0.1828"/>
+<vertex x="1.4888" y="0.1828"/>
+<vertex x="1.0049" y="0.232" curve="19.000773"/>
+<vertex x="0.8746" y="0.5465"/>
+<vertex x="1.182" y="0.9235"/>
+<vertex x="0.9235" y="1.182"/>
+<vertex x="0.5465" y="0.8746" curve="19.000773"/>
+<vertex x="0.232" y="1.0049"/>
+<vertex x="0.1828" y="1.4888"/>
+<vertex x="-0.1828" y="1.4888"/>
+<vertex x="-0.232" y="1.0049" curve="19.000773"/>
+<vertex x="-0.5465" y="0.8746"/>
+<vertex x="-0.9235" y="1.182"/>
+<vertex x="-1.182" y="0.9235"/>
+<vertex x="-0.8746" y="0.5465" curve="19.000773"/>
+<vertex x="-1.0049" y="0.232"/>
+<vertex x="-1.4888" y="0.1828"/>
+<vertex x="-1.4888" y="-0.1828"/>
+<vertex x="-1.0049" y="-0.232" curve="19.000773"/>
+<vertex x="-0.8746" y="-0.5465"/>
+<vertex x="-1.182" y="-0.9235"/>
+<vertex x="-0.9235" y="-1.182"/>
+<vertex x="-0.5465" y="-0.8746" curve="9.498218"/>
+<vertex x="-0.3947" y="-0.9528"/>
+<vertex x="-0.1794" y="-0.4331" curve="-67.514699"/>
+<vertex x="-0.4688" y="0" curve="-247.473915"/>
+<vertex x="0.1794" y="-0.4331"/>
+</polygon>
+</package>
 </packages>
 </library>
 <library name="Ai_Passives">
@@ -4035,7 +4027,7 @@ This library includes capacitors, inductors, resistors, fuses, beads, potentiome
 <wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
 <smd name="1" x="-0.9" y="0" dx="1.1" dy="1" layer="1"/>
 <smd name="2" x="0.9" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="-1.905" y="0.635" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
+<text x="-1.778" y="0.762" size="1.27" layer="25" font="vector" ratio="15">&gt;NAME</text>
 <rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 <rectangle x1="-0.2286" y1="-0.381" x2="0.2286" y2="0.381" layer="21"/>
@@ -4497,7 +4489,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="16.8275" y="15.39875" size="0.6096" layer="25" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="ON" library="Ai_LED" package="LED-0603" value="BLUE" x="16.35125" y="14.12875" smashed="yes" rot="R90"/>
-<element name="LOGO1" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="22.352" y="13.208" smashed="yes" rot="MR0"/>
+<element name="LOGO1" library="Ai_Miscellany" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="22.352" y="13.208" smashed="yes" rot="MR0"/>
 <element name="R6" library="Ai_Passives" package="RES-0603" value="1K" x="28.448" y="12.319" smashed="yes" rot="R90">
 <attribute name="NAME" x="28.12415" y="10.02665" size="0.6096" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="VALUE" x="30.353" y="11.684" size="1.27" layer="27" rot="R90"/>
@@ -4512,7 +4504,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="7.0485" y="11.176" size="0.635" layer="25" font="vector" ratio="15" rot="R90"/>
 </element>
 <element name="USB1" library="Ai_Connectors" package="USB-MICROB-TH" value="USBMICROB-TH" x="1.74625" y="10.16" smashed="yes" rot="R270"/>
-<element name="RST" library="Ai_Electromechanical" package="SW-SPST-SMD035X030" value="SW-SPSTSMD03X026" x="32.7025" y="7.01675" smashed="yes" rot="R180">
+<element name="RST" library="Ai_Electromechanical" package="SW-SPST-SMD035X030" value="SW-SPSTSMD035X030" x="32.7025" y="7.01675" smashed="yes" rot="R180">
 <attribute name="NAME" x="34.163" y="4.953" size="0.6096" layer="21" font="vector" ratio="15"/>
 </element>
 <element name="U$3" library="Ai_Miscellany" package="AI-LOGO-XS" value="AI-LOGOXS" x="18.161" y="4.191" rot="R90"/>
